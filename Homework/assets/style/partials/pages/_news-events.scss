@@ -1,0 +1,31 @@
+.news-events{
+    background-color: $bgcolor-section-color-2;
+    & img{
+        width: 100%;
+    }
+    & .col-lg-4 h2{
+        font-family: $Sans;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 400;
+        & a{
+            color: $color-pink;
+            &:hover{
+                color: $color-button-hovered;
+            }
+        }
+    }
+    & span{
+        text-transform: uppercase;
+        color: $color-lightgrey;
+    }
+}
+
+.information{
+    background-color:$color-white;
+}
+
+.news-events-container{
+    margin-bottom:24px;
+}

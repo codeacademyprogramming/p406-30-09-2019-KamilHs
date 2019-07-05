@@ -1,0 +1,14 @@
+.section-heading-container::after{
+    width: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.section-heading-container::after,.title-item:after{
+    content: "";
+    @include absolute();
+    height: 2px;
+    background-color: $color-pink;
+    bottom: 0%;
+}

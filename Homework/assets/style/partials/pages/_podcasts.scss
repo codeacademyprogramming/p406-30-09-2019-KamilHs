@@ -1,0 +1,36 @@
+
+
+
+.podcasts{
+    background-color: $bgcolor-podcasts;
+    &-element>a>div{
+        overflow: hidden;
+
+    }
+    & img{
+        width: 100%;
+        transform: scale(1.1);
+
+        &:hover{
+            transform: scale(1);
+            transition: transform .3s;
+        }
+    }
+}
+
+
+.image-half{
+    height: $half;  
+}
+
+.image img{
+    height: $height-podcast;
+}
+
+.mt-15{
+    margin-top: 15px;
+}
+
+.link-to-podcast{
+    @include relative();
+}

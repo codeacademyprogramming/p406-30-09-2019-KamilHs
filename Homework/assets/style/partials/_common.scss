@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body{
+    @include margin-0();
+}
+
+.pointer-none{
+    pointer-events: none;
+}
+
+.z-index-3{
+    z-index: 3;
+}
+
+.white{
+    color: $color-white;
+}
+
+header,main,footer{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $headingfont;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.section-description{
+    color: $color-section-desc;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.d-none{
+    display: none;
+}

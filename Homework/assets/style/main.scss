@@ -1,0 +1,43 @@
+@import './partials/variables';
+@import './partials/mixins';
+@import './partials/grid/index';
+@import'./partials/common';
+@import './partials/components/index';
+@import './partials/layout/index';
+@import './partials/pages/index';
+
+
+body{
+    @include margin-0();
+}
+
+header{
+    @include relative();
+}
+
+.section-text,.second{
+    @include absolute();
+    top: 0%;
+    left: 0%;
+}
+
+.header-first{
+    height: 100vh;
+    background-image: url("../photos/hero_bg_1.webp");
+    background-size: cover;
+    @include relative();
+}
+
+.section-text-header{
+    font-size: 72px;
+    color: $color-white;
+}
+
+.header-first::after{
+    z-index:0;
+    content: "";
+    @include absolute();
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: black, $alpha: .3);
+}

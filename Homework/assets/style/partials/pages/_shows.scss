@@ -1,0 +1,40 @@
+.shows{
+    background-color: $bgcolor-shows;
+}
+
+.padding-container{
+    @include padding-y-100();
+}
+
+ .show-list-item{
+    height: $height-upcoming-shows;
+
+    overflow: hidden;
+    & img:hover{
+        transform: scale(1);
+
+    }
+ }
+
+
+.link-to-show{
+    @include relative();    
+}
+
+.left-bottom{
+    @include absolute();
+    left: 0%;
+    bottom: 0%;
+}
+
+.shows-type{
+    left: 0%;
+    white-space: nowrap;
+}
+
+
+.show-list-item>img{
+    transform: scale(1.1);
+    width: 100%;
+    transition: transform .3s;
+}

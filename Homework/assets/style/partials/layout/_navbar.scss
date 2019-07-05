@@ -1,0 +1,43 @@
+.first-nav{
+    background-color: $color-darkgrey;
+    z-index: 7;
+    @include fixed();
+    top: 0%;
+    .logo-holder{
+        .logo{
+            height: $height-colorib-img;
+            margin: 15px 24px 0px 0px;
+        }
+    }
+    .navbar-icon{
+        border-left: 1px solid $color-lightgrey;
+        padding:20px;
+        font-size: $size-navbar-icon;
+    }
+    .navbar-link{
+        color: $color-lightgrey;
+    }
+}
+
+
+.deejee{
+    background-color: $color-darkergrey;
+    padding:20px;
+    margin: 0;
+    color: $color-lightgrey;
+
+}
+
+.fa-cloud-download-alt{
+    color: $color-white;
+    background-color: $color-download-icon;
+}
+
+.first-nav{
+    & .navbar-link:hover{
+        &>.navbar-icon{
+    background-color: $color-darkergrey;
+    color: $color-white;
+        }
+    }
+}

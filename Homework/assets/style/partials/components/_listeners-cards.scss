@@ -1,0 +1,23 @@
+.person{
+    width: 50%;
+    border-radius: 100%;
+}
+
+
+.listener-card-container{
+    background-color: $color-white;
+    padding: 48px;
+}
+
+.font-weight-light{
+    font-family: $Sans !important;
+    font-weight: 300 !important;
+    font-size: 1rem !important;
+    text-transform: none !important;
+    letter-spacing: 2px !important; 
+}
+
+.italic{
+    font-style: italic !important;
+    line-height: 1.7;
+}
