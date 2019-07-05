@@ -1,0 +1,95 @@
+.third {
+  background-color: $color-pink;
+  & i {
+    color: $color-white;
+    font-size: 20px;
+    padding: 30px 15px;
+  }
+  & .text-center:hover {
+    background-color: $color-button-hovered;
+    transition: background-color 0.3s;
+  }
+}
+
+footer {
+  background-color: $bgcolor-footer;
+  & button {
+    @include absolute();
+    border-radius: 0 5px 5px 0 !important;
+    height: 60px;
+  }
+  & i {
+    padding-right: 35px;
+  }
+  & img{
+      width: 100%;
+  }
+}
+
+.title-container {
+  @include relative();
+  & + p {
+    color: $color-footer-text;
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+}
+
+.title-item {
+  color: $color-white;
+  padding-bottom: 15px;
+  font-size: 1.3rem !important;
+  letter-spacing: 0.1em !important;
+
+  &::after {
+    left: 0%;
+    width: 40px;
+  }
+}
+
+.footer-input {
+  border: 1px solid $color-white;
+  background-color: $bgcolor-footer;
+  border-radius: 5px 0 0 5px;
+  height: 60px;
+  font-style: italic;
+  font-weight: 300;
+  padding: 20px;
+  outline: none;
+}
+
+.input-button-container {
+  @include relative();
+}
+
+footer ul > li {
+  margin-bottom: 13px;
+  & > a {
+    font-size: 18px;
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.play-button{
+    @include absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: $color-white;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    &:hover{
+        cursor: pointer;
+    }
+    & i{
+        padding: 0;
+        color: $color-pink;
+    }
+}
+
+.video{
+    padding: 0;
+}

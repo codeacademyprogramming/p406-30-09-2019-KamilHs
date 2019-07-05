@@ -1,0 +1,10 @@
+.section-heading{
+    @include relative();
+    color:$color-white;
+    font-size: $size-section-heading;
+    font-weight: $weight-section-heading;
+}
+
+.section-heading-container{
+    position: relative;
+}

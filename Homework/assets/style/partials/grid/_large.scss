@@ -1,0 +1,8 @@
+@media (max-width: $breakpoint-large) {
+    .d-none-lg{
+        display: none;
+    }
+    .d-lg{
+        display: inline !important;
+    }
+}

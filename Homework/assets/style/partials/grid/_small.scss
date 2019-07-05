@@ -1,0 +1,11 @@
+@media (max-width: $breakpoint-small) {
+    .first-nav{
+        & .sm-none{
+            display: none;
+        }
+    }
+    .image img{
+        height: $half !important; 
+    }
+    
+}
